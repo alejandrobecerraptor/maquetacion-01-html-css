@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "fajala";
-  src: url("fonst/FjallaOne-Regular.ttf") format('truetype');
+  src: url("fonst/FjallaOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -27,17 +27,17 @@ body {
   background-image: url("img/paven.png");
 }
 
-aside a{
-  color:#529225;
-  text-decoration:none;
+aside a {
+  color: #529225;
+  text-decoration: none;
 }
 
-aside a:hover{
-  color:#285616;
+aside a:hover {
+  color: #285616;
 }
 
-a:visited{
-  color:#529225;
+a:visited {
+  color: #529225;
 }
 
 /* Formularios  */
@@ -195,7 +195,7 @@ nav > ul > li:hover > ul > li {
 }
 
 nav > ul > li:hover > ul > li a {
-  color: #666666  !important;
+  color: #666666 !important;
 }
 
 nav > ul > li:hover > ul > li:hover {
@@ -213,7 +213,8 @@ nav > ul > li:hover > ul > li:hover {
 
 /* Barra lateral  */
 
-aside, #frase {
+aside,
+#frase {
   width: 200px;
   float: left;
   margin: 30px;
@@ -223,8 +224,8 @@ aside, #frase {
   font-family: sans-serif, Arial, Helvetica;
 }
 
-#frase{
-  clear: both;
+#frase {
+  /* clear: both; */
   width: 180px;
   padding: 10px;
   font-size: 14px;
@@ -260,16 +261,16 @@ aside h3 {
   margin-bottom: 15px;
 }
 
-aside li{
+aside li {
   margin-top: 8px;
-  margin-bottom:5px;
+  margin-bottom: 5px;
   margin-left: 20px;
   list-style: square;
 }
 
 /* Formularios Barra lateral */
 
-aside div label, 
+aside div label,
 aside div input[type="text"],
 aside div input[type="email"],
 aside div input[type="password"],
@@ -277,28 +278,28 @@ aside div label a {
   display: block;
   width: 95%;
   margin-top: 2px;
-  margin-bottom:2px;
+  margin-bottom: 2px;
 }
 
 aside div input[type="button"],
 aside div input[type="submit"],
-aside div button{
+aside div button {
   margin-top: 5px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 aside input,
-aside label{
+aside label {
   margin: 0px auto;
   text-align: center;
 }
 
 /* Secciones */
 
-#sections{
+#sections {
   float: right;
   width: 75%;
-  font-family: sans-serif,arial,helvetica;
+  font-family: sans-serif, arial, helvetica;
 }
 
 #sections a {
@@ -308,9 +309,10 @@ aside label{
 #sections .titulo {
   font-size: 25px;
   margin-bottom: 5px;
+  margin-top: -20px;
   font-family: "fajala";
   letter-spacing: 1px;
-  font-weight:normal;
+  font-weight: normal;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -328,13 +330,24 @@ aside label{
   overflow: hidden;
 }
 
-#sections .article{
+#sections .article {
   margin: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-#sections .date{
+#sections .date {
   color: gray;
   font-size: 14px;
+}
+
+#sections .stickerOne,
+#sections .stickerTwo {
+  position: absolute;
+  margin-top: -38px;
+  z-index: 0;
+}
+
+#sections .stickerTwo {
+  margin-left: 860px;
 }
