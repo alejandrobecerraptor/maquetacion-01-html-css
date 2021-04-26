@@ -16,6 +16,17 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "icons";
+  src: url("fonst/websymbols-regular-webfont.svg#WebsymbolsRegular") format("svg"),
+       url("fonst/websymbols-regular-webfont.eot") format("svg");
+  src: url("fonst/websymbols-regular-webfont.eot?#iefix") format("embedded-opent"),
+    url("fonst/websymbols-regular-webfont.woff") format("woff"),
+    url("fonst/websymbols-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* Estilos Generales */
 
 * {
@@ -83,6 +94,13 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover {
   box-shadow: 0px 0px 2px gray;
+}
+
+.icon{
+  font-family: "icons";
+  float: left;
+  margin-right: 5px;
+  margin-top: -2px;
 }
 /* cabacera */
 
